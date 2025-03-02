@@ -79,18 +79,19 @@ def  generar_contrasena_aleatoria(facil_de_decir=False, facil_de_leer=False):
     # si facil_decir y facil_leer son falsos, se utilizan letras números y caractéres especiales para generar la contraseña
     # Genera contraseña con 12 caracteres al azar del conjunto de caracteres especificado anteriormente
     
-#### Esta funcion nuestra el manu princpal del generador de contraseñas.
+#### Esta funcion nuestra el menú princpal del generador de contraseñas.
 def mostrar_menu_generar_contrasena(): 
     print('\n')
     print("*SELECCIONE UNA OPCIÓN: *")
+    #Si es la opcion 1 el usuario genera si propia contraseña
     print('1. Yo genero mi propia contraseña: ')
-     Si es la opcion 1 el usuario genera si propia contraseña
+     #si es la opción 2 se genera contraseña facil de decir
     print('2. Generar una contraseña automática fácil de decir:')
-    si es la opción 2 se genera contraseña facil de decir 
+     #si es la opción 3 genera contraseña facil de leer
     print('3. Generar una contraseña automática fácil de leer:')
-    si es la opción 3 genera contraseña facil de leer
+    #Si es la opción 4 genera contraseña con todos los caracteres
     print('4. Generar una contraseña aleatoria de de todos los caracteres de longitud 12 digitos:')
-     Si es la opción 4 genera contraseña con todos los caracteres
+     
     print('\n')
 
 #### Función de reglas para las contraseñas.
