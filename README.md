@@ -1,4 +1,4 @@
-###GENEADOR SEGURO DE CONTRASEÑAS
+#### Generador Seguro de Contraseñas
 Eeste es un programa realizado en python, usamos las librerias randomt string para generar contraseñas seguras de diferentes tipos, segun la opción seleccionada por el usuario, tambien permite generar contraseñas faciles de decir, y faciles de leer, o completamente aleatorias con caracteres especiales	
 #### CARACTERÍSTICAS
 - Genera contraseña de forma manual.
@@ -53,6 +53,7 @@ def generate_contrasena_opcion(clase):
     #Si el usuario escoge la opción 4 generará automáticamente una contraseña con una longitud de 12 caracteres especiales:
     elif clase == 4:
         return generar_contrasena_aleatoria()
+        
   ###### Esta función genera una contraseña aleatoria: facil_de_decir si es True, genera una contraseña facil de decir decir facil_de_leer: si es True, genera una contraseña facil de leer
 def  generar_contrasena_aleatoria(facil_de_decir=False, facil_de_leer=False):
 
