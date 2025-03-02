@@ -30,9 +30,10 @@ SELECCIONE UNA OPCION
 2. Reglas del 	   generador de contraseñas: Muestra las reglas recomendadas para crear contraseñas seguras.
 3. Salir: termina el programa.
 
-A continuacion presentamos el código del generador de contraseñas.
+## Acontinuación presentamos el código del generador seguro de contraseñas
 
 import random
+
 import string
 
 print('\n')
@@ -41,15 +42,19 @@ print('\n')
 
 #### Función para generar una contrseña  y la logitud de la misma.
 def generate_contrasena_opcion(clase):
+
     #Si el usuario escoge la opción 1 generará su propia contraseña:
     if clase == 1:
         return input("Genera tu propia contrasena: ")
+        
     #Si el usuario escoge la opción 2 generará automáticamente una contraseña fácil de decir de 12 caracteres:
     elif clase == 2:
         return generar_contrasena_aleatoria(facil_de_decir=True)
+        
     #Si el usuario escoge la opción 3 generará automáticamente una contraseña facil de leer de 12 caracteres:
     elif clase == 3:
         return generar_contrasena_aleatoria(facil_de_leer=False)
+        
     #Si el usuario escoge la opción 4 generará automáticamente una contraseña con una longitud de 12 caracteres especiales:
     elif clase == 4:
         return generar_contrasena_aleatoria()
@@ -81,14 +86,19 @@ def  generar_contrasena_aleatoria(facil_de_decir=False, facil_de_leer=False):
     
 #### Esta funcion nuestra el menú princpal del generador de contraseñas.
 def mostrar_menu_generar_contrasena(): 
+
     print('\n')
     print("*SELECCIONE UNA OPCIÓN: *")
+    
     #Si es la opcion 1 el usuario genera si propia contraseña
     print('1. Yo genero mi propia contraseña: ')
+    
      #si es la opción 2 se genera contraseña facil de decir
     print('2. Generar una contraseña automática fácil de decir:')
+    
      #si es la opción 3 genera contraseña facil de leer
     print('3. Generar una contraseña automática fácil de leer:')
+    
     #Si es la opción 4 genera contraseña con todos los caracteres
     print('4. Generar una contraseña aleatoria de de todos los caracteres de longitud 12 digitos:')
      
