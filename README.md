@@ -1,42 +1,37 @@
-#GENERADOR SEGURO DE CONTRASEÑAS
+###GENEADOR SEGURO DE CONTRASEÑAS
+Eeste es un programa realizado en python, usamos las librerias randomt string para generar contraseñas seguras de diferentes tipos, segun la opción seleccionada por el usuario, tambien permite generar contraseñas faciles de decir, y faciles de leer, o completamente aleatorias con caracteres especiales	
+#### CARACTERÍSTICAS
+- Genera contraseña de forma manual.
+- Genera contraseña de forma automáticafacil de decir.
+- Genera contraseña automática facil de leer.
+- Genera contraseña aleatoria con caracteres especiales.
+- Muestra las reglas para generar contraseña 
+####  REQUISITOS
+python 3.12.9
+Se utilizaran las librerias Random, String
+### Instalacion
+Clonar el repositoria de
+#### Uso
+Ejecuta el archivo python desde la terminal o desde un entorno de desarrollo integrado (IDE)
+python Generatdor_contraseña.py
+Al ejecuta el programa, se mostrara el siguiente menu
 
-Este es un programa en python, usamos las librerias ramdom y string para generar contraseñas seguras de diferentes tipos, segun la opción seleccionada por el usuari:permite generar contraseñas manualmente, generar contraseñas faciles de decir, faciles de leer, o completamente aleatorias con caracteres especiales.
-
-#Características
--Generar contraeña de forma manual.
--Generar contraseñas automáticas fácils de decir.
--Generar contraseñas automáticas fáciles de leer.
--Generar contraseñas aleatorias con caracteres especiales.
--Mostrar reglas para generar contraseñas seguras
-
-#Requisitos
-Python 3.12.9
-Libreria random, string
-
-#Instalación
-Clonar el ropositorio
-
-#Uso
-Ejecuta el archivo Python desde la terminal o desde de un entorno de Desarrollo Integrado(IDE)
-python Generador_contraseña.py
-Al ejecutar el programa, se mostrará el siguiente menú.
-SELECCIONE UNA OPCIÓN:
-1. Generar una contraseña.
+SELECCIONE UNA OPCION
+1. Generar na contraseña
 2. Reglas del generador de contraseñas.
-3. salir
-   
-#Opciones del menú
-1. Generar contraseña: muestra un submenú con las opciones: 
-    1)Yo genero mi propia contraseña: el Usuario podra escribir slacontraseña deseada.
-    2)Generar contraseña facil de decir: generará automaticamente una contraseña facil de decir.
-    3)Generar contraseña automática fácil de leer. generará una contraseña facil de leer
-    4)Generar una contraseña aleatoria de todos los caracteres de longitud 12 dígitos: Generara una contraseña aleatoria de 
+3. Salir
+###  Opciones del menú
+1.   Generar contraseña: muestra un submenú con las opciones: 
+- Yo genero mi propia contraseña: el Usuario podra escribir slacontraseña deseada.
+- Generar contraseña facil de decir: generará automaticamente una contraseña facil de decir.
+- Generar contraseña automática fácil de leer. generará una contraseña facil de leer.
+- Generar una contraseña aleatoria de todos los caracteres de longitud 12 dígitos: Generara una contraseña aleatoria de 
        todos los caracteres de longitud 12 digitos.
-2. Reglas del generador de contraseñas: Muestra las reglas recomendadas para crear contraseñas seguras.
-3. Salir: Termina el programa
+2. Reglas del 	   generador de contraseñas: Muestra las reglas recomendadas para crear contraseñas seguras.
+3. Salir: termina el programa.
 
-A continuación le presentamos el código del generdor de contraseñas:
-   # GENERADOR SEGURO DE CONTRASEÑAS 
+A continuacion presentamos el código del generador de contraseñas.
+
 import random
 import string
 
@@ -44,7 +39,7 @@ print('\n')
 print('***GENERADOR SEGURO DE CONTRASEÑAS***')
 print('\n')
 
-# Función para generar una contrseña  y la logitud de la misma.
+#### Función para generar una contrseña  y la logitud de la misma.
 def generate_contrasena_opcion(clase):
     #Si el usuario escoge la opción 1 generará su propia contraseña:
     if clase == 1:
@@ -58,9 +53,9 @@ def generate_contrasena_opcion(clase):
     #Si el usuario escoge la opción 4 generará automáticamente una contraseña con una longitud de 12 caracteres especiales:
     elif clase == 4:
         return generar_contrasena_aleatoria()
-   
+  ###### Esta función genera una contraseña aleatoria: facil_de_decir si es True, genera una contraseña facil de decir decir facil_de_leer: si es True, genera una contraseña facil de leer
 def  generar_contrasena_aleatoria(facil_de_decir=False, facil_de_leer=False):
-# esta función genera una contraseña aleatoria: facil_de_decir si es True, genera una contraseña facil de decir decir facil_de_leer: si es True, genera una contraseña facil de leer
+
     if facil_de_decir:
         #Si es el parametro facil_de_decir es True, define una lista de palabras faciles de pronunciar.
         palabras_faciles = [
@@ -140,4 +135,3 @@ def menu_principal():
             print("Opción incorrecta. Intente de nuevo.")
 
 menu_principal()
-
