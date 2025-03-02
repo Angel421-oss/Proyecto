@@ -1,18 +1,22 @@
 #GENERADOR SEGURO DE CONTRASEÑAS
 
 Este es un programa en python, usamos las librerias ramdom y string para generar contraseñas seguras de diferentes tipos, segun la opción seleccionada por el usuari:permite generar contraseñas manualmente, generar contraseñas faciles de decir, faciles de leer, o completamente aleatorias con caracteres especiales.
-##Características
+
+#Características
 -Generar contraeña de forma manual.
 -Generar contraseñas automáticas fácils de decir.
 -Generar contraseñas automáticas fáciles de leer.
 -Generar contraseñas aleatorias con caracteres especiales.
 -Mostrar reglas para generar contraseñas seguras
-##Requisitos
+
+#Requisitos
 Python 3.12.9
 Libreria random, string
-##Instalación
+
+#Instalación
 Clonar el ropositorio
-##Uso
+
+#Uso
 Ejecuta el archivo Python desde la terminal o desde de un entorno de Desarrollo Integrado(IDE)
 python Generador_contraseña.py
 Al ejecutar el programa, se mostrará el siguiente menú.
@@ -20,7 +24,8 @@ SELECCIONE UNA OPCIÓN:
 1. Generar una contraseña.
 2. Reglas del generador de contraseñas.
 3. salir
-##Opciones del menú
+   
+#Opciones del menú
 1. Generar contraseña: muestra un submenú con las opciones: 
     1)Yo genero mi propia contraseña: el Usuario podra escribir slacontraseña deseada.
     2)Generar contraseña facil de decir: generará automaticamente una contraseña facil de decir.
