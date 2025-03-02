@@ -41,16 +41,16 @@ print('\n')
 
 #### Función para generar una contrseña  y la logitud de la misma.
 def generate_contrasena_opcion(clase):
-    #Si el usuario escoge la opción 1 generará su propia contraseña:
+    Si el usuario escoge la opción 1 generará su propia contraseña:
     if clase == 1:
         return input("Genera tu propia contrasena: ")
-    #Si el usuario escoge la opción 2 generará automáticamente una contraseña fácil de decir de 12 caracteres:
+    Si el usuario escoge la opción 2 generará automáticamente una contraseña fácil de decir de 12 caracteres:
     elif clase == 2:
         return generar_contrasena_aleatoria(facil_de_decir=True)
-    #Si el usuario escoge la opción 3 generará automáticamente una contraseña facil de leer de 12 caracteres:
+    Si el usuario escoge la opción 3 generará automáticamente una contraseña facil de leer de 12 caracteres:
     elif clase == 3:
         return generar_contrasena_aleatoria(facil_de_leer=False)
-    #Si el usuario escoge la opción 4 generará automáticamente una contraseña con una longitud de 12 caracteres especiales:
+    Si el usuario escoge la opción 4 generará automáticamente una contraseña con una longitud de 12 caracteres especiales:
     elif clase == 4:
         return generar_contrasena_aleatoria()
         
@@ -79,23 +79,23 @@ def  generar_contrasena_aleatoria(facil_de_decir=False, facil_de_leer=False):
     # si facil_decir y facil_leer son falsos, se utilizan letras números y caractéres especiales para generar la contraseña
     # Genera contraseña con 12 caracteres al azar del conjunto de caracteres especificado anteriormente
     
-def mostrar_menu_generar_contrasena():
     #Función que muestra el manú principal del Generador de Contraseñas
+def mostrar_menu_generar_contrasena(): 
     print('\n')
     print("*SELECCIONE UNA OPCIÓN: *")
     print('1. Yo genero mi propia contraseña: ')
-     # Si es la opcion 1 el usuario genera si propia contraseña
+     Si es la opcion 1 el usuario genera si propia contraseña
     print('2. Generar una contraseña automática fácil de decir:')
-    #si es la opción 2 se genera contraseña facil de decir 
+    si es la opción 2 se genera contraseña facil de decir 
     print('3. Generar una contraseña automática fácil de leer:')
-    #si es la opción 3 genera contraseña facil de leer
+    si es la opción 3 genera contraseña facil de leer
     print('4. Generar una contraseña aleatoria de de todos los caracteres de longitud 12 digitos:')
-    # Si es la opción 4 genera contraseña con todos los caracteres
+     Si es la opción 4 genera contraseña con todos los caracteres
     print('\n')
 
-
+#Función de reglas para las contraseñas
 def reglas_generador_contrasena():
-    #Función de reglas para las contraseñas
+    
     print('\n')
     print("***REGLAS DEL GENERADOR DE CONTRASEÑAS SEGURAS***")
     print('\n')
